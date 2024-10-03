@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>www.html.com</title>
+	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+	<h2>Tooltip</h2>
+	<a href="#" data-toggle="tooltip" title="Congratulations...!">Click Me To Hover</a>
+</div>
+
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+<br><br>
+
+<div class="container">
+	<h2>Positioning Tooltips</h2>
+	<a href="#" data-toggle="tooltip" data-placement="top" title="Congratulations...!">Top</a>
+	<a href="#" data-toggle="tooltip" data-placement="bottom" title="Congratulations...!">Bottom</a>
+	<a href="#" data-toggle="tooltip" data-placement="left" title="Congratulations...!">Left</a>
+	<a href="#" data-toggle="tooltip" data-placement="Right" title="Congratulations...!">Right</a>
+</div>
+<br><br>
+
+<div class="container">
+	<h2>Popover</h2>
+
+  <a href="#" data-toggle="popover" title="Popover Header" data-content="Khaali hai bhai!">Toggle popover</a>
+</div>
+
+<script>
+$(document).ready(function(){
+  $('[data-toggle="popover"]').popover();   
+});
+</script>
+</div>
+<br><br>
+
+<div class="container">
+  <h3>Popover</h3>
+  <a href="#" title="Header" data-toggle="popover" data-placement="top" data-content="Content">Top</a>
+  <a href="#" title="Header" data-toggle="popover" data-placement="bottom" data-content="Content">Bottom</a>
+  <a href="#" title="Header" data-toggle="popover" data-placement="left" data-content="Content">Left</a>
+  <a href="#" title="Header" data-toggle="popover" data-placement="right" data-content="Content">Right</a>
+</div>
+​
+<script>
+$(document).ready(function(){
+  $('[data-toggle="popover"]').popover();   
+});
+</script>
+
+</body>
+</html>
